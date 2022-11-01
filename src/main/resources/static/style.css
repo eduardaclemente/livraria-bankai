@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', sans-serif;
+}
+
+
+
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-nome {
+	margin-left:20px;
+	text-align: center;
+}
+
+.list-group{
+	text-align: left;
+
+ }
