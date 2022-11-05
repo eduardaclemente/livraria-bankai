@@ -6,9 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="style.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/static/style.css">
-<title>HOME</title>
+<title>MENU</title>
 </head>
 <body>
 
+   <h1>Welcome to Home Page</h1>
+   <form th:action="@{/logout}" method="post">
+        <input type="submit" class="button-logout" value="Logout" />
+    </form>
 </body>
 </html>

@@ -71,7 +71,7 @@ body {
  	font-size: large;
  	bottom: 0;
 	position: fixed;
-		font-weight: bold;
+	font-weight: bold;
 		text-shadow: 
                -1px -1px 0px #FFF, 
                -1px 1px 0px #FFF,                    
@@ -79,5 +79,47 @@ body {
                 1px 0px 0px #FFF;
  }
  
-
+.login-title{
+	margin-top: 20px;
+	text-align: center;
+	color: #000000;
+	font-weight: bold;
+		text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
+}
  
+.insert-user{
+	font-size: x-large;
+	margin: 200px auto;
+	width: 600px;
+	color: black;
+	font-weight: bold;
+		text-shadow: 
+               -1px -1px 0px #ff00ff, 
+               -1px 1px 0px #ff00ff,                    
+                1px -1px 0px #ff00ff,                  
+                1px 0px 0px #ff00ff;
+}
+
+.insert-password{
+	font-size: x-large;
+	margin: 200px auto;
+	width: 600px;
+	color: black;
+	font-weight: bold;
+		text-shadow: 
+               -1px -1px 0px #ff00ff, 
+               -1px 1px 0px #ff00ff,                    
+                1px -1px 0px #ff00ff,                  
+                1px 0px 0px #ff00ff;
+}
+
+
+
+  .button-login > button:hover{
+	background-color: red;
+	box-shadow: 1px 1px 3px black;
+ }

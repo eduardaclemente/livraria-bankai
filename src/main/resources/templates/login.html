@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/static/style.css">
+
+<title>LOGIN</title>
+</head>
+<body>
+	<div class="login-title"> 
+		<h1>INSIRA USUÁRIO E SENHA PARA ACESSO:</h1>
+	</div>
+
+	<form action="#" th:action="@{/login}" th:object="${user}" method="POST">
+	
+		<div class="insert-user">
+			<label>Usuário: </label>
+			<input type="text" th:field="*{login}" name="usuario"><br>
+		</div>
+		
+		<div class="insert-password">
+			<label>Senha: </label>
+			<input type="password" th:field="*{senha}" name="senha"><br>	
+		</div>
+		
+		<div>
+			<button type="submit" name="btEntrar">ENTRAR</button>
+			<input type="reset" value="LIMPAR">
+		</div>
+		
+	</form>
+</body>
+</html>
