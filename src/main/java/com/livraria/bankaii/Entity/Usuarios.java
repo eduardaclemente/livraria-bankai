@@ -1,5 +1,6 @@
 package com.livraria.bankaii.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,7 +26,11 @@ public class Usuarios {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int login;
+	
+	@Column(name = "senha", nullable = true)
 	private String senha;
+	
+	@Column(name = "nome", nullable = true)
 	private String nome;
 	
 	

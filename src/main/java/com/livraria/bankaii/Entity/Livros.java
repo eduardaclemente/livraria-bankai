@@ -1,5 +1,10 @@
 package com.livraria.bankaii.Entity;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 public class Livros {
 	
 	
@@ -17,11 +22,22 @@ public class Livros {
 		
 	}
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@Column(name = "titulo")
 	private String titulo;
+	
+	@Column(name = "autor")
 	private String autor;
+	
+	@Column(name = "categoria")
 	private String categoria;
+	
+	@Column(name = "valor")
 	private float valor;
+	
 	public Long getId() {
 		return id;
 	}

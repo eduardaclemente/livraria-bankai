@@ -35,11 +35,11 @@ public class WebController {
 //		return "index";
 //	}
 //	
-//	@PostMapping
-//    @RequestMapping(value = "/login", method = RequestMethod.POST)
-//	public String login(@ModelAttribute ModelAndView mv) {
-//		return "login";
-//	}
+	@PostMapping
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+	public String login(@ModelAttribute ModelAndView mv) {
+		return "login";
+	}
 	
 //    @RequestMapping("login")
 //    @GetMapping("/login")
@@ -49,5 +49,12 @@ public class WebController {
 //        return mv;
 //    }
 
-    
+//    @RequestMapping(value = "/login", method = RequestMethod.POST)
+//    @PostMapping("/login")
+//    public ModelAndView login() {
+//    	ModelAndView mv = new ModelAndView();
+//    	mv.setViewName("home/login.html");
+//        return mv;
+//    }
+//	
 }

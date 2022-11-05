@@ -2,6 +2,7 @@ package com.livraria.bankaii.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,14 +24,7 @@ public class LoginController {
 //	}
 	
 //	
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
-    @GetMapping("/login")
-    public ModelAndView login() {
-    	ModelAndView mv = new ModelAndView();
-    	mv.setViewName("home/login.html");
-        return mv;
-    }
-	
+
 	
 
 }

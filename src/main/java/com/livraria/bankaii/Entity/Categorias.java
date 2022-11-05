@@ -1,5 +1,9 @@
 package com.livraria.bankaii.Entity;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 public class Categorias {
 	
 	
@@ -12,6 +16,8 @@ public class Categorias {
 		
 	}
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String categorias;
 
 	public String getCategorias() {
