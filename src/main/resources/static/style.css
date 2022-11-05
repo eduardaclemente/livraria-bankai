@@ -10,18 +10,74 @@
 
 
 body {
-    background-image: url(../images/background.jpg);
+    background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+}
+
+.main-index{
+	height: 100vh;
 }
 
 .home-nome {
-	margin-left:20px;
+	margin-top: 20px;
 	text-align: center;
+	color: #000000;
+	font-weight: bold;
+		text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
 }
 
 .list-group{
-	text-align: left;
-
+	font-size: x-large;
+	margin: 200px auto;
+	list-style: none;
+	width: 600px;
+	background-color: #00000070;
+	color: white;
  }
+ 
+ 
+.button-index{
+ 	display: flex;
+ 	width: 50%;
+ 	margin: auto;
+ 	justify-content: space-around;
+ 	
+ }
+ 
+ .button-index > button{
+	background: #069cc2;
+	border-radius: 6px; 
+	padding: 15px; 
+	cursor: pointer; 
+	color: #fff; 
+	border: none; 
+	font-size: 16px;
+ }
+ 
+ 
+  .button-index > button:hover{
+	background-color: red;
+	box-shadow: 1px 1px 3px black;
+ }
+ 
+ .footer-index{
+ 	font-size: large;
+ 	bottom: 0;
+	position: fixed;
+		font-weight: bold;
+		text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
+ }
+ 
+
+ 

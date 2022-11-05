@@ -5,17 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="style.css" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/static/style.css">
+
 
 <title>Apresentação</title>
 </head>
 <body>
+	<main class="main-index"> 
 
-	<form method="GET" action="/index">
 
-		<div class="home-nome">
-			<div>
-				<h1>HOME</h1>
+		<div class="home">
+			<div class="home-nome">
+				<h1>Projeto Sistema/Servidor</h1>
 			</div>
 			<ul class="list-group">
 				<li>Eduarda Clemente Almeida RGM:</li>
@@ -26,18 +27,22 @@
 			</ul>
 		</div>
 
-		<button type="submit">SUPRESA!!</button>
-		<button type="submit">MENU INICIAL</button>
+	<div class="button-index">
+		<button type="submit" name ="btSupresa">🐱‍👤🐱‍👤🐱‍👤</button>
+		
+	 <button name ="btMenu"><a th:href="@{login}">LOGIN 😍</a> </button> 
+		
+	</div>
 
 
-	</form>
 
 	<footer>
-		<div class="flex-container footer">
+		<div class="footer-index">
 			<p>&copy; 2022 Disciplina Cliente/Servidor</p>
-			<p>Desenvolvido por: Eduarda, Marcus, Everton, Beatriz e Geovanna.</p>
+			<p>Desenvolvido por: Eduarda, Marcus, Everton, Beatriz e Geovana.</p>
 		</div>
 	</footer>
+	</main>
 
 </body>
 </html>
